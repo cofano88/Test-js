@@ -17,13 +17,13 @@
 
 // console.log(zerosOfFactorialEnd(10));
 
-// function numToFactorial(n) {
-//   var f = 1;
-//   while (n) {
-//     f *= n--;
-//   }
-//   return f;
-// }
+function numToFactorial(n) {
+  var f = 1;
+  while (n) {
+    f *= n--;
+  }
+  return f;
+}
 
 function numToDobleFactorial(n) {
   var f = 1;
