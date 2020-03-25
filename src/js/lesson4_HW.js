@@ -1,36 +1,36 @@
-function evenNumsSumm(a, b) {
-  var summ = 0;
-  if (a < b) {
-    for (var i = a; i < b; i++) {
-      if (i % 2 == 0) {
-        summ += i;
-      }
-      continue;
-    }
-  } else {
-    for (var i = b; i < a; i++) {
-      if (i % 2 == 0) {
-        summ += i;
-      }
-      continue;
-    }
-  }
-  console.log(summ);
-}
+// function evenNumsSumm(a, b) {
+//   var summ = 0;
+//   if (a < b) {
+//     for (var i = a; i < b; i++) {
+//       if (i % 2 == 0) {
+//         summ += i;
+//       }
+//       continue;
+//     }
+//   } else {
+//     for (var i = b; i < a; i++) {
+//       if (i % 2 == 0) {
+//         summ += i;
+//       }
+//       continue;
+//     }
+//   }
+//   console.log(summ);
+// }
 
-evenNumsSumm(10, 5);
+// evenNumsSumm(10, 5);
 
 // ----------------------------------------------------------------------------------------------------------------
 
-function numToFactorial(n) {
-  var f = 1;
-  while (n) {
-    f *= n--;
-  }
-  console.log(f);
-}
+// function numToFactorial(n) {
+//   var f = 1;
+//   while (n) {
+//     f *= n--;
+//   }
+//   console.log(f);
+// }
 
-numToFactorial(5);
+// numToFactorial(5);
 
 // ----------------------------------------------------------------------------------------------------------------
 
@@ -49,9 +49,9 @@ function hayesSeq(n) {
       arr.push(num);
       count++;
     }
-  } while (num == 0);
+  } while (num !== 1);
 
-  arr.push(num);
+  // arr.push(num);
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > arr[0]) {
       arr[0] = arr[i];
