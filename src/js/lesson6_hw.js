@@ -1,58 +1,60 @@
-// function ifPalindrome(string) {
-//   if (
-//     string ===
-//     string
-//       .split("")
-//       .reverse()
-//       .join("")
-//   ) {
-//     console.log("Palindrome!");
-//   } else {
-//     console.log("Not a palindrome!");
-//   }
-// }
+function ifPalindrome(string) {
+  if (
+    string ===
+    string
+      .split("")
+      .reverse()
+      .join("")
+  ) {
+    console.log("Palindrome!");
+  } else {
+    console.log("Not a palindrome!");
+  }
+}
 
-// isPalindrome("rotor");
+isPalindrome("rotor");
 
 // -----------------------------------------
 
-// function uniqueArray() {
-//   var arr = [];
-//   for (let i = 0; i < 7; i++) {
-//     let a = Math.round(Math.random() * 10);
-//     if (arr.includes(a)) continue;
-//     arr.push(a);
-//   }
-//   console.log(arr);
-//   arr = arr.sort(function(a, b) {
-//     return a - b;
-//   });
-//   console.log(arr);
-// }
+function uniqueArray() {
+  var arr = [];
+  for (let i = 0; i < 7; i++) {
+    let a = Math.round(Math.random() * 10);
+    if (arr.includes(a)) continue;
+    arr.push(a);
+  }
+  console.log(arr);
+  arr = arr.sort(function(a, b) {
+    return a - b;
+  });
+  console.log(arr);
+}
 
-// uniqueArray();
+uniqueArray();
 
 // ------------------------------------------------
 
-function toZero(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].toString().replace(0, "zero");
-  }
-  return arr;
-}
+// function toZero(arr) {
+//   // const tempArr = [...arr]
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i].toString().replace(/0/g, "zero");
+//   }
+//   return arr;
+// }
 
-let arr = [];
-for (let i = 0; i < 10; i++) {
-  let a = Math.round(Math.random() * 100);
-  arr.push(a);
-}
-toZero(arr);
-console.log(arr);
-
+// let arr = new Array(10)
+// // let arr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   let a = Math.round(Math.random() * 100);
+//   // arr.push(a);
+//   arr[i] = a;
+// }
+// const result = toZero([...arr]);
+// console.log(result);
 
 // --------------------------------------------------------
 
-// Guessing game 
+// Guessing game
 
 // -Принять от пользователя начальную и конечную точки диапазона
 // -Запуск ф-и-генератора массива чисел в пределах диапазона
