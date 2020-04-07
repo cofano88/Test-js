@@ -45,6 +45,9 @@ function addUser() {
     <td>${ln}</td>
     <td>${ag}</td>`;
     table.append(string);
+    string.addEventListener("click", function () {
+      string.classList.toggle("checked");
+    });
   }
 }
 
@@ -52,8 +55,9 @@ function addUser() {
 
 let userStr = document.getElementsByClassName("user");
 for (let i = 0; i < userStr.length; i++) {
-  userStr[i].addEventListener("click", function () {
-    userStr[i].classList.toggle("checked");
+  const user = userStr[i];
+  user.addEventListener("click", function () {
+    user.classList.toggle("checked");
   });
 }
 
@@ -65,7 +69,7 @@ function deleteUser() {
   if (checkedStr.length !== 0) {
     let wantDelete = confirm("Do you want to delete this user(s)?");
     if (wantDelete) {
-      for (let i = 0; i < checkedStr.length; i++) {
+      for (let i = checkedStr.length - 1; i >= 0; i--) {
         checkedStr[i].remove();
       }
     }
