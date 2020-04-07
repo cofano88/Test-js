@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Welcome</h1>
-    <h2>dvmkfm</h2>
+    <div id="buttons">
+      <input type="button" id="addUser_btn" value="add user" />
+      <input type="button" id="deleteUser_btn" value="delete user" />
+      <input type="button" id="changeUser_btn" value="change user" />
+    </div>
+    <div id="board">
+      <table id="table" class="table">
+        <tr id="header">
+          <th>first name</th>
+          <th>last name</th>
+          <th>age</th>
+        </tr>
+      </table>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

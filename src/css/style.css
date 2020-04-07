@@ -1,7 +1,11 @@
 body {
   background-color: beige;
 }
-
-h1 {
-  color: brown;
+tr:hover {
+  border: 1px solid rgb(109, 109, 68);
+  border-radius: 3px;
+}
+.checked {
+  color: aliceblue;
+  background-color: rgb(109, 109, 68);
 }
