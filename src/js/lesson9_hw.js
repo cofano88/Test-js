@@ -45,3 +45,4 @@ function Circle(d, name) {
 
 // --------------------------------------------------------
 console.log(new Circle(4, "one").calcSquare());
+
